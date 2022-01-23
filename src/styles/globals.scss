@@ -1,6 +1,6 @@
 :root {
   --darkBlue-intro: hsl(217, 28%, 15%);
-  --darkBlue-background: hsl(216, 53%, 9%);
+  --darkBlue-background: hsl(218, 28%, 13%);
   --darkBlue-footer: hsl(216, 53%, 9%);
   --darkBue-testimonials: hsl(219, 30%, 18%);
   
@@ -17,6 +17,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--darkBlue-background);
 }
 
 a {
