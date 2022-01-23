@@ -1,0 +1,65 @@
+.container {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 4px;
+    padding: 1rem;
+    background-color: var(--darkBue-testimonials);
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;        
+        gap: 10px;
+        
+        p {
+            font-size: 0.65rem;
+            line-height: 15pt;
+            font-weight: 400;            
+            color: var(--white);
+        }
+
+        .wrapperProfile {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: row;
+            gap: 7px;
+
+            section {
+                display: flex;
+                overflow: hidden;
+                align-items: center;
+                border-radius: 20px;
+                margin-bottom: 15px;
+                width: 12%;                
+            }
+
+            div {                
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-direction: column;                
+                
+                strong {
+                    font-size: 0.7rem;
+                    color: var(--white);
+                    margin-right: 41px;
+                    line-height: 7pt;
+                }
+
+                p {
+                    font-size: 0.5rem;
+                    color: var(--white);
+                    text-align: center;
+                    line-height: 7pt;
+                    margin-right: 20px;                    
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    align-items: center;        
+    flex-direction: row;
+    gap: 5px;
+    border-bottom: 1px solid var(--cyan);        
+    
+    a {
+        font-size: 0.8rem;
+        padding: 1px;
+        width: 100%;
+        text-align: center;
+        color: var(--cyan);        
+    }    
+
+}
+

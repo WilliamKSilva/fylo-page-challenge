@@ -76,7 +76,45 @@
     gap: 2.5rem;
   }
 
+  .containerProductive {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5rem;    
 
+    div {
+      width: 70%;
+      padding-bottom: 1.5rem;
+    }
+
+    strong {
+      font-size: 1.2rem;
+      color: var(--white);      
+    }
+
+    p {
+      font-size: 0.8rem;
+      color: var(--white)
+    }    
+  }
+
+  .wrapperAnchor {
+    width: 91%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .containerQuotes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 4rem;
+    gap: 1.2rem;
+  }
   
 }
 
