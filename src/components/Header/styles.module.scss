@@ -1,0 +1,38 @@
+.container {
+    width: 100%;
+    padding: 1.2rem;
+    background-color: var(--darkBlue-background);
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-direction: row;
+    width: 100%;
+
+    div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+
+        strong {
+            font-size: 1.4rem;
+            color: var(--white);
+        }
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        
+        strong {
+            font-size: 0.7rem;
+            color: var(--white);
+            font-weight: 400;            
+        }
+    }
+}
