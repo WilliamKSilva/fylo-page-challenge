@@ -12,12 +12,19 @@ import StayProductive from '../../public/illustration-stay-productive.png';
 import FirstProfile from '../../public/profile-1.jpg';
 import SecondProfile from '../../public/profile-2.jpg';
 import ThirdProfile from '../../public/profile-3.jpg';
+import Logo from '../../public/logo.svg';
+import Email from '../../public/icon-email.svg';
+import Location from '../../public/icon-location.svg';
+import Phone from '../../public/icon-phone.svg';
+import { BsFacebook } from 'react-icons/bs';
+import { FiTwitter, FiInstagram } from 'react-icons/fi';
 import { Button } from '../components/Button';
 import { FeaturesItem } from '../components/FeaturesItem';
 import { Contents } from '../utils/features';
 import { Anchor } from '../components/Anchor';
 import { Quotes } from '../components/Quotes';
 import { QuotesContent } from '../utils/quotes';
+import { Card } from '../components/Card';
 
 const Home: NextPage = () => {
   return (
@@ -110,7 +117,57 @@ const Home: NextPage = () => {
             role="Founder & CEO, Huddle"
           />
         </div>
+        <div className={styles.wrapperEmail}>
+          <Card />          
+        </div>
       </main>
+      <footer className={styles.footer}>        
+        <div className={styles.containerContact}>          
+            <div className={styles.wrapperLogo}>
+              <Image src={Logo} alt="logo"/>
+            </div>
+            <div>
+              <div className={styles.wrapperContactIcons}>
+                <Image src={Location} alt=""/>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor metus diam, nec hendrerit tellus dictum et.
+                Phasellus tempor non risus volutpat lacinia. 
+              </p>
+            </div>
+            <div>
+              <div className={styles.wrapperContactIcons}>
+                <Image src={Phone} alt=""/>
+              </div>
+              <p>
+                +1-543-123-4567 
+              </p>
+            </div>
+            <div>
+              <div className={styles.wrapperContactIcons}>
+                <Image src={Email} alt=""/>
+              </div>
+              <p>
+                example@fylo.com
+              </p>
+            </div>                            
+        </div>
+        <div className={styles.containerLinks}>
+          <a>AboutUs</a>
+          <a>Jobs</a>
+          <a>Press</a>
+          <a>Blog</a>
+          <br />
+          <a>Contact Us</a>
+          <a>Terms</a>
+          <a>Privacy</a>
+        </div>
+        <div className={styles.containerSocialMedia}>
+          <BsFacebook color="#FFFFFF" />
+          <FiTwitter color="#FFFFFF" />
+          <FiInstagram color="#FFFFFF" />
+        </div>
+      </footer>
     </div>
   )
 }
