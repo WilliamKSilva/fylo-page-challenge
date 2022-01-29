@@ -6,7 +6,7 @@ export function Header() {
         <header className={styles.container}>
             <section className={styles.section}>
                 <div>
-                    <ImStack color="hsl(0, 0%, 100%)" size={25}/>
+                    <ImStack color="hsl(0, 0%, 100%)" className={styles.logoIcon}/>
                     <strong>Fylo</strong>
                 </div>
                 <nav>

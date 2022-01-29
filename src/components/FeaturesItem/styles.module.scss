@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex: 1 0 40%;
     flex-direction: column;        
     
     div.wrapperImage {
@@ -22,6 +23,11 @@
         font-size: 1rem;
         text-align: center;
         color: var(--white);
+
+        @media (min-width: 1440px) {
+            width: 75%;
+            line-height: 15pt;     
+        }
     }
     
 }

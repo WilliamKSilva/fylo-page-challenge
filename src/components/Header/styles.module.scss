@@ -12,6 +12,10 @@
     flex-direction: row;
     width: 100%;
 
+    @media (min-width: 1440px) {
+        padding-inline: 3rem;
+    }
+
     div {
         display: flex;
         flex-direction: row;
@@ -21,6 +25,17 @@
         strong {
             font-size: 1.4rem;
             color: var(--white);
+
+            @media (min-width: 1440px) {
+                font-size: 2rem;
+            }
+        }
+
+        .logoIcon {
+            font-size: 20px;
+            @media (min-width: 1440px) {
+                font-size: 30px;
+            }
         }
     }
 

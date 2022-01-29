@@ -19,17 +19,25 @@
         justify-content: center;
         flex-direction: column;
         width: 100%;
-        gap: 5px;
+        gap: 5px;    
 
         strong {
             font-size: 1.2rem;        
             color: var(--white);
+            
+            @media (min-width: 1440px) {      
+                font-size: 2rem;           
+            }
         }
     
         p {
             font-size: 0.8rem;
             text-align: center;
             color: var(--white);
+
+            @media (min-width: 1440px) {      
+                line-height: 15pt;           
+            }
         }
     }
 
@@ -41,8 +49,12 @@
         justify-content: center;
         flex-direction: column;
 
+        @media (min-width: 1440px) {      
+            flex-direction: row;           
+        }
+
         input {
-            max-width: 250px;
+            max-width: 350px;
             width: 100%;
             border: none;
             border-radius: 30px;

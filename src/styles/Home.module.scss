@@ -16,17 +16,36 @@
   background-color: var(--darkBlue-intro);
   padding-top: 40%;
 
+  @media (min-width: 1440px) {
+    padding-top: 30%;
+  }
+
   
   .wrapperCurvy {
     position: relative;
     top: 5px;
+    width: 100%;    
+
+    @media (min-width: 1440px) {
+      display: none;
+    }
+  }
+
+  .wrapperCurvyDesktop {
+    position: relative;    
     width: 100%;
+    top: 5px;
   }
 
   .wrapperIllustration {
     position: absolute;
     top: 60px;
-    width: 17rem;
+    width: 17rem;    
+
+    @media (min-width: 1440px) {
+      position: absolute;
+      width: 30rem;
+    }
   }
 }
 
@@ -36,6 +55,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+   
+
+  
   
   .containerGetStarted {
     display: flex;
@@ -47,16 +69,33 @@
     width: 85%;
     gap: 1rem;
 
+    
+    @media (min-width: 1440px) {
+      width: 40%;
+      bottom: 32rem;
+    }
+
     strong {
       font-size: 1.5rem;
       text-align: center;
       color: var(--white);
+
+      @media (min-width: 1440px) {
+        line-height: 35pt;
+        width: 90%;
+        font-size: 1.9rem;
+      }
     }
 
     p {
       font-size: 1rem;
       text-align: center;
-      color: var(--white)
+      color: var(--white);
+
+      @media (min-width: 1440px) {
+        line-height: 20pt;
+        width: 80%;
+      }
     }
 
     .wrapperButton {
@@ -74,6 +113,15 @@
     justify-content: center;
     flex-direction: column;
     gap: 2.5rem;
+
+    @media (min-width: 1440px) {
+      display: inline-flex;
+      flex-direction: row;
+      flex-wrap: wrap;      
+      width: 80%;
+      position: relative;
+      bottom: 25rem;      
+    }
   }
 
   .containerProductive {
@@ -82,22 +130,60 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 5rem;    
+    margin-top: 5rem;
+    
+    @media (min-width: 1440px) {
+      flex-direction: row;      
+    }
 
     div {
       width: 70%;
       padding-bottom: 1.5rem;
+
+      @media (min-width: 1440px) {
+        position: relative;
+        bottom: 22rem;      
+      }
     }
 
-    strong {
-      font-size: 1.2rem;
-      color: var(--white);      
-    }
+    .wrapperText {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;      
 
-    p {
-      font-size: 0.8rem;
-      color: var(--white)
-    }    
+      strong {
+        font-size: 1.2rem;
+        color: var(--white);
+        
+        @media (min-width: 1440px) {
+          width: 100%;
+          font-size: 2rem;
+          justify-self: flex-start;      
+        }
+      }
+  
+      p {
+        font-size: 0.8rem;
+        color: var(--white);
+
+        @media (min-width: 1440px) {
+          width: 100%;
+          font-size: 1.1rem;
+          line-height: 20pt;
+          justify-self: flex-start;      
+        }
+      }
+
+      .wrapperAnchorDesktop {
+        position: relative;
+        top: 24rem;
+        display: flex;
+        width: 30%;
+        height: 0;
+        margin-right: 71%;
+      }
+    }        
   }
 
   .wrapperAnchor {
@@ -105,6 +191,10 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+
+    @media (min-width: 1440px) {
+      display: none;     
+    }
   }
 
   .containerQuotes {
@@ -114,6 +204,14 @@
     flex-direction: column;
     padding-top: 10rem;
     gap: 1.2rem;
+
+    @media (min-width: 1440px) {
+      position: relative;
+      bottom: 10rem;
+      padding-top: 0rem;
+      flex-direction: row;
+      width: 70%;           
+    }
   }
 
   .wrapperEmail {
@@ -121,6 +219,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;        
+    
   }
   
 }
@@ -134,6 +233,16 @@
   justify-content: center;
   flex-direction: column;
 
+  .wrapperLogoDesktop {
+    width: 50%;
+    margin-top: 15%;
+    margin-right: 22%;
+  }
+
+  @media (min-width: 1440px) {
+    padding-top: 0;    
+  }
+
   background-color: var(--darkBlue-footer);  
 
   .containerContact {
@@ -145,11 +254,21 @@
     margin-top: 50%;
     gap: 10px;
 
+    @media (min-width: 1440px) {
+      margin-top: 15%;
+      width: 80%;
+      flex-direction: row;    
+    }
+
     .wrapperLogo {
       width: 100%;
       padding-left: 50px;
       padding-bottom: 20px;
-    }
+
+      @media (min-width: 1440px) {
+        display: none;                   
+      }
+    }    
 
     div {
       width: 90%;
@@ -161,6 +280,11 @@
 
       .wrapperContactIcons {
         width: 50px;
+
+        @media (min-width: 1440px) {
+          position: relative;
+          bottom: 10rem;                 
+        }
       }
 
       p {
@@ -168,6 +292,11 @@
         width: 70%;
         color: var(--white);
         text-align: start;
+
+        @media (min-width: 1440px) {
+          position: relative;
+          bottom: 10rem;                 
+        }
       }
       
     }    

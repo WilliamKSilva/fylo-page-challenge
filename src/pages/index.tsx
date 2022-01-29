@@ -12,6 +12,7 @@ import StayProductive from '../../public/illustration-stay-productive.png';
 import FirstProfile from '../../public/profile-1.jpg';
 import SecondProfile from '../../public/profile-2.jpg';
 import ThirdProfile from '../../public/profile-3.jpg';
+import CurvyDesktop from '../../public/bg-curvy-desktop.svg';
 import Logo from '../../public/logo.svg';
 import Email from '../../public/icon-email.svg';
 import Location from '../../public/icon-location.svg';
@@ -32,7 +33,10 @@ const Home: NextPage = () => {
       <Header />
       <section className={styles.intro}>
           <div className={styles.wrapperCurvy}>
-            <Image src={Curvy} alt=""/>
+            <Image src={Curvy} alt=""/>            
+          </div>
+          <div className={styles.wrapperCurvyDesktop}>
+            <Image src={CurvyDesktop} alt="curvyDesktop"/>
           </div>
           <div className={styles.wrapperIllustration}>
             <Image src={IntroImage} alt=""/>
@@ -80,19 +84,24 @@ const Home: NextPage = () => {
             <div>
               <Image src={StayProductive} alt=""/>
             </div>
-            <strong>
-              Stay productive, wherever you are
-            </strong>
-            <p>
-              Never let location be an issue when accesing
-              your files. Fylo has you covered for all of
-              your life storage needs.                            
-            </p>
-            <p>
-              Securely share files and folders with friends,
-              family and colleagues for live collaboration.
-              No email attachments required.
-            </p>                        
+            <div className={styles.wrapperText}>
+              <strong>
+                Stay productive,<br/> wherever you are
+              </strong>
+              <p>
+                Never let location be an issue when accesing
+                your files. Fylo has you covered for all of
+                your life storage needs.                            
+              </p>
+              <p>
+                Securely share files and folders with friends,
+                family and colleagues for live collaboration.
+                No email attachments required.
+              </p>
+              <div className={styles.wrapperAnchorDesktop}>
+                <Anchor href="/" title="See how Fylo works"/>
+              </div>
+            </div>                        
         </div>
         <div className={styles.wrapperAnchor}>
           <Anchor href="/" title="See how Fylo works"/>
@@ -121,11 +130,14 @@ const Home: NextPage = () => {
           <Card />          
         </div>
       </main>
-      <footer className={styles.footer}>        
+      <footer className={styles.footer}>
+        <div className={styles.wrapperLogoDesktop}>
+          <Image src={Logo} alt="logo" />
+        </div>        
         <div className={styles.containerContact}>          
             <div className={styles.wrapperLogo}>
               <Image src={Logo} alt="logo"/>
-            </div>
+            </div>            
             <div>
               <div className={styles.wrapperContactIcons}>
                 <Image src={Location} alt=""/>
