@@ -2,7 +2,7 @@
 
 ![Build Status](https://img.shields.io/github/last-commit/WilliamKSIlva/notepad-app)
 
-A challenge provided from Frontend Mentor that propose to us reproduce a pre-built desing in our app. 
+A challenge provided from Frontend Mentor that propose to us reproduce a pre-built design in our app. 
 The app was made following the rules of responsiviness for 375px screens and 1440px screens.
 
 You can check the challenge here - https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd/hub/fylo-dark-theme-landing-page-jmIkkuYVu
