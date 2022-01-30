@@ -1,34 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Fylo-page-challenge
 
-## Getting Started
+![Build Status](https://img.shields.io/github/last-commit/WilliamKSIlva/notepad-app)
 
-First, run the development server:
+A challenge provided from Frontend Mentor that propose to us reproduce a pre-built desing in our app. 
+The app was made following the rules of responsiviness for 375px screens and 1440px screens.
 
-```bash
-npm run dev
-# or
+You can check the challenge here - https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd/hub/fylo-dark-theme-landing-page-jmIkkuYVu
+
+![image](https://user-images.githubusercontent.com/75429175/151717453-631ded1d-cf02-424b-8965-f951abf1aeea.png)
+
+![image](https://user-images.githubusercontent.com/75429175/151717462-dd21b9e1-0677-4d7e-ae92-d47c911eec00.png)
+
+
+## Technology
+- Typescript
+- Nextjs
+- Sass
+## Installation
+
+Make sure that you have node installed. Clone this repo and follow
+the next steps.
+
+```sh
+cd fylo-page-challenge
+code .
+npm i / yarn
 yarn dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
