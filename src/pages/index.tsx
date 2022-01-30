@@ -148,31 +148,54 @@ const Home: NextPage = () => {
               </p>
             </div>
             <div>
-              <div className={styles.wrapperContactIcons}>
-                <Image src={Phone} alt=""/>
+              <div className={styles.wrapperPhoneDesktop}>
+                <div className={styles.wrapperPhone}>
+                  <Image src={Phone} alt="" />
+                </div>
+                <p className={styles.phoneText}>
+                  +1-543-123-4567 
+                </p>
               </div>
-              <p>
-                +1-543-123-4567 
-              </p>
             </div>
-            <div>
-              <div className={styles.wrapperContactIcons}>
-                <Image src={Email} alt=""/>
+            <div className={styles.wrapperEmailDesktop}>
+              <div>
+                <div className={styles.wrapperContactIcons}>
+                  <Image src={Email} alt=""/>
+                </div>
+                <p>
+                  example@fylo.com
+                </p>
               </div>
-              <p>
-                example@fylo.com
-              </p>
-            </div>                            
+            </div>
+            <div className={styles.containerLinks}>
+              <section className={styles.content}>
+                <a>AboutUs</a>
+                <a>Jobs</a>
+                <a>Press</a>
+                <a>Blog</a>
+              </section>
+              <section className={styles.content}>
+                <br />
+                <a>Contact Us</a>
+                <a>Terms</a>
+                <a>Privacy</a>
+              </section>
+            </div>
+            <div className={styles.containerSocialMedia}>
+              <BsFacebook color="#FFFFFF" />
+              <FiTwitter color="#FFFFFF" />
+              <FiInstagram color="#FFFFFF" />
+            </div>                                        
         </div>
-        <div className={styles.containerLinks}>
-          <a>AboutUs</a>
-          <a>Jobs</a>
-          <a>Press</a>
-          <a>Blog</a>
-          <br />
-          <a>Contact Us</a>
-          <a>Terms</a>
-          <a>Privacy</a>
+        <div className={styles.containerLinks}>          
+            <a>AboutUs</a>
+            <a>Jobs</a>
+            <a>Press</a>
+            <a>Blog</a>          
+            <br />
+            <a>Contact Us</a>
+            <a>Terms</a>
+            <a>Privacy</a>          
         </div>
         <div className={styles.containerSocialMedia}>
           <BsFacebook color="#FFFFFF" />

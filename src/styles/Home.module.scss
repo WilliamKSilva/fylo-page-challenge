@@ -32,9 +32,13 @@
   }
 
   .wrapperCurvyDesktop {
-    position: relative;    
-    width: 100%;
-    top: 5px;
+    display: none;
+
+    @media (min-width: 1440px) {
+      position: relative;    
+      width: 100%;
+      top: 5px;
+    }
   }
 
   .wrapperIllustration {
@@ -55,10 +59,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-   
-
-  
-  
+       
   .containerGetStarted {
     display: flex;
     position: relative;
@@ -176,12 +177,16 @@
       }
 
       .wrapperAnchorDesktop {
-        position: relative;
-        top: 24rem;
-        display: flex;
-        width: 30%;
-        height: 0;
-        margin-right: 71%;
+        display: none;
+
+        @media (min-width: 1440px) {
+          position: relative;
+          top: 24rem;
+          display: flex;
+          width: 30%;
+          height: 0;
+          margin-right: 71%;
+        }
       }
     }        
   }
@@ -234,9 +239,13 @@
   flex-direction: column;
 
   .wrapperLogoDesktop {
-    width: 50%;
-    margin-top: 15%;
-    margin-right: 22%;
+    display: none;
+
+    @media (min-width: 1440px) {
+      width: 50%;
+      margin-top: 15%;
+      margin-right: 22%;
+    }
   }
 
   @media (min-width: 1440px) {
@@ -255,9 +264,31 @@
     gap: 10px;
 
     @media (min-width: 1440px) {
-      margin-top: 15%;
+      margin-top: 10%;
       width: 80%;
       flex-direction: row;    
+    }
+
+    .wrapperEmailDesktop {      
+      display: flex;
+      position: relative;
+      right: 10px;
+
+      @media (min-width: 1440px) {
+        
+        top: 1rem;
+        right: 10rem;        
+      }      
+    }
+
+    .wrapperPhoneDesktop {      
+      
+      @media (min-width: 1440px) {
+        display: flex;
+        position: relative;
+        bottom: 1rem;
+        left: 5rem;
+      }
     }
 
     .wrapperLogo {
@@ -277,6 +308,7 @@
       flex-direction: row;
       justify-content: flex-start;
       padding-left: 10px;
+                
 
       .wrapperContactIcons {
         width: 50px;
@@ -286,6 +318,17 @@
           bottom: 10rem;                 
         }
       }
+      
+      .wrapperPhone {
+        width: 50px;
+        position: relative;
+        right: 10px;
+        
+        @media (min-width: 1440px) {
+          position: relative;
+          bottom: 11rem;             
+        }
+      }      
 
       p {
         font-size: 0.7rem;
@@ -295,11 +338,69 @@
 
         @media (min-width: 1440px) {
           position: relative;
-          bottom: 10rem;                 
+          bottom: 10rem;
+          line-height: 18pt;
+          width: 100%; 
+          font-size: 0.9rem;                
         }
       }
       
-    }    
+      .phoneText {
+        font-size: 0.7rem;
+        width: 70%;
+        color: var(--white);
+        text-align: start;
+
+        @media (min-width: 1440px) {
+          position: relative;
+          bottom: 11rem;                 
+        }
+      }      
+    }
+
+    .containerLinks {      
+      display: none;
+      
+      @media (min-width: 1440px) {        
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 4rem;
+        padding-top: 0;        
+      }
+  
+      .content {        
+  
+        @media (min-width: 1440px) {        
+          display: flex;          
+          flex-direction: column;
+          position: relative;
+          right: 7rem;
+          bottom: 10rem;                    
+        }
+      }
+          
+      a {      
+        font-size: 0.7rem;
+        align-self: flex-start;
+        padding: 0.4rem;
+        color: var(--white);
+        
+        @media (min-width: 1440px) {
+          font-size: 1rem;                                                   
+        }
+      }
+    }
+
+    .containerSocialMedia {
+      display: none;
+  
+      @media (min-width: 1440px) {        
+        display: flex;
+        position: relative;
+        bottom: 15.7rem;              
+      }
+    }
   }
 
   .containerLinks {
@@ -310,11 +411,16 @@
     padding-top: 13%;
     padding-left: 25px;
 
+    @media (min-width: 1440px) {
+      display: none;                                  
+    }
+    
+
     a {      
       font-size: 0.7rem;
       align-self: flex-start;
       padding: 0.4rem;
-      color: var(--white);
+      color: var(--white);      
     }
   }
 
@@ -327,6 +433,10 @@
     margin-top: 18%;
     padding-bottom: 10%;
     gap: 1rem;
+
+    @media (min-width: 1440px) {
+      display: none;                                  
+    }
   }
 }
 
