@@ -22,7 +22,7 @@ Make sure that you have node installed. Clone this repo and follow
 the next steps.
 
 ```sh
-cd fylo-page-challenge
+cd fylo-challenge
 code .
 npm i / yarn
 yarn dev
